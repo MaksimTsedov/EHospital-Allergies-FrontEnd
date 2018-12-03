@@ -1,0 +1,19 @@
+<div class="col-md-6">
+  <h2> Allergies</h2>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>Pathogen</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let allergy of allergies">
+      <td>{{allergy.id}}</td>
+      <td>{{allergy.pathogen}}</td>
+      <td><button class="btn btn-danger" style="margin-left: 20px;"> Delete</button></td>
+    </tr>
+    </tbody>
+  </table>
+  <button class="btn btn-danger" (click)="addAllergy()"> Add Allergy</button>
+</div>
